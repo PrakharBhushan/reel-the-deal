@@ -1,20 +1,40 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Reel The Deal
 
-# Run and deploy your AI Studio app
+A portfolio and booking website for a Mumbai-based photo and video production studio. It
+presents the studio's services, gear and past work, and lets clients book a shoot.
 
-This contains everything you need to run your app locally.
+## Sections
 
-View your app in AI Studio: https://ai.studio/apps/3418268b-f623-4caa-87da-9e8d3709adaa
+| Section | What it shows |
+|---|---|
+| Hero | Full-screen cinematic intro |
+| Services | Product retouching, portrait shoots, full-length and social-media video, reel and long-form editing, voice-over |
+| Gear | The studio's camera and production equipment |
+| Selected Works | Portfolio of campaigns: fashion, product, drone, real estate, events |
+| The Workflow | Book → discovery call → execution → delivery |
+| Contact | Booking form, base location (Mumbai, available to travel) |
 
-## Run Locally
+## Stack
 
-**Prerequisites:**  Node.js
+- **React 19** + **TypeScript**, built with **Vite 6**
+- **Tailwind CSS 4** for styling
+- **Motion** for scroll and entrance animations
+- **lucide-react** icons
 
+The first version was generated with Google AI Studio and then edited by hand.
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## Run locally
+
+Requires Node.js 18 or later.
+
+```bash
+npm install
+npm run dev        # http://localhost:3000
+```
+
+```bash
+npm run build      # production build in dist/
+npm run lint       # type-check
+```
+
+No API key is needed. The site doesn't call any AI service.
